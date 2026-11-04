@@ -25,17 +25,17 @@ Install and run StartupIQ on any Android device without Expo Go or a computer:
 
 ---
 
-## 📸 Screenshots & UI Showcase
+## 📱 Application Screenshots
 
-| 🔍 Explore & Filter | 🤖 AI Pitch Evaluator | 🚀 Milestone Tracker |
-| :---: | :---: | :---: |
-| *(Explore feed with multi-category pills & live upvotes)* | *(Neo-Brutalist meter, TAM, Defensibility, & Clarity)* | *(Interactive 5-stage venture roadmap)* |
-| `[Screenshot: Explore Screen]` | `[Screenshot: AI Pitch Evaluator]` | `[Screenshot: Milestone Tracker]` |
+Explore the high-contrast Neo-Brutalist interface, live interactive features, and on-device AI evaluation:
 
-| 💡 Pitch Submission | 🏆 Dynamic Leaderboard | 💬 Founder Q&A Discussion |
-| :---: | :---: | :---: |
-| *(Interactive domain selector & pitch tips)* | *(Podium top 3 with real-time rankings)* | *(Role-tagged comments: Angel, Dev, Founder)* |
-| `[Screenshot: Submit Screen]` | `[Screenshot: Leaderboard Screen]` | `[Screenshot: Discussion Screen]` |
+| 🔍 Explore & Filter Feed | 🤖 Content-Aware AI Pitch Evaluator |
+| :---: | :---: |
+| <img src="assets/screenshots/explore.png" width="360" alt="StartupIQ Explore Feed" /><br />**Explore & Filter Feed**<br />*Live keyword search, domain chips, sort tabs, and real-time upvote counters.* | <img src="assets/screenshots/ai-evaluator.png" width="360" alt="StartupIQ AI Pitch Evaluator" /><br />**AI Pitch Evaluator ("StartupIQ Score")**<br />*Neo-Brutalist meter, TAM, Defensibility, Clarity bars, and 100% Evidence Completeness.* |
+| 💡 Founder Pitch Submission | 🏆 Community Podium Leaderboard |
+| <img src="assets/screenshots/submit-idea.png" width="360" alt="StartupIQ Pitch Submission" /><br />**Founder Pitch Lab**<br />*Validated submission flow with pitch ranking tips, domain tags, and pricing models.* | <img src="assets/screenshots/leaderboard.png" width="360" alt="StartupIQ Leaderboard" /><br />**Dynamic Leaderboard & Top 3 Podium**<br />*Gold, Silver, and Bronze pedestals with real-time re-ranking by community upvotes.* |
+| ⚙️ Settings & Innovator Profile | 🚀 Standalone Android APK |
+| <img src="assets/screenshots/settings.png" width="360" alt="StartupIQ Settings and Profile" /><br />**Settings & Innovator Profile**<br />*Community judge credentials, haptic feedback toggle, and one-tap seed data restoration.* | <br /><br />📦 **Standalone Distribution Ready**<br /><br />• **100% On-Device Heuristic Engine** (Zero external APIs)<br />• **Native AsyncStorage on SQLite**<br />• **EAS Cloud Compiled APK** (`com.startupiq.app`)<br />• **No Expo Go or Local Server Required**<br /><br />👉 [**Download Standalone APK (.apk)**](https://expo.dev/artifacts/eas/vEdr-o8c38p6ePq2a16_-VCgQRMdAr0yWhUGcDr-qGs.apk)<br /><br /> |
 
 ---
 
