@@ -1,153 +1,318 @@
-# StartupIQ 🚀
+# 🚀 StartupIQ — Neo-Brutalist Startup Validation & Pitch Intelligence
 
-A mobile application built with **React Native**, **Expo (SDK 58)**, and **Expo Router** for startup idea submission, community voting, and pitch evaluation.
+[![React Native](https://img.shields.io/badge/React_Native-0.88.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo_SDK-58.0.23-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+[![Expo Router](https://img.shields.io/badge/Expo_Router-v58-blueviolet?style=for-the-badge&logo=expo&logoColor=white)](https://docs.expo.dev/router/introduction/)
+[![Offline AI](https://img.shields.io/badge/AI_Evaluator-100%25_Offline-00F0FF?style=for-the-badge&logo=probot&logoColor=black)](https://github.com/vjshriram157/startupIQ)
+[![Android APK](https://img.shields.io/badge/Android_APK-v1.0.0_Ready-FFE600?style=for-the-badge&logo=android&logoColor=black)](https://expo.dev/artifacts/eas/vEdr-o8c38p6ePq2a16_-VCgQRMdAr0yWhUGcDr-qGs.apk)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-Designed with an ultra-premium **AMOLED dark theme (`#0B0B12`)**, glowing purple and blue gradient accents, rounded glass cards, and micro-interactions tailored for Android and iOS.
-
----
-
-## 📱 Features & Screens
-
-### 1. 🔍 Explore Ideas (`src/app/(tabs)/index.jsx`)
-- **Live Search**: Instant keyword filtering across titles, taglines, problem statements, and categories.
-- **Category Filter Chips**: Scrollable chips (`All`, `AI & ML`, `DevTools`, `FinTech`, `ClimateTech`, `HealthTech`, `Cybersecurity`, `SaaS`) with real-time idea counts.
-- **Sort Selector**: Toggle between **Trending** (algorithmic momentum), **Top Voted** (highest community score), and **Newest** (recent submissions).
-- **Interactive Startup Cards**:
-  - Category pill & stage badge.
-  - Startup name, punchy tagline, and 2-line pitch teaser.
-  - Founder avatar badge with credentials.
-  - Interactive **Upvote button** with real-time counter, tactile haptic feedback, and AsyncStorage persistence.
-  - Bookmark toggle button.
-  - Full card tap opens the comprehensive pitch deck.
-- **Pull-to-Refresh**: Instant synchronization with local storage.
-
-### 2. 💡 Submit Idea (`src/app/(tabs)/submit.jsx`)
-- Clean, validated founder submission workflow:
-  - Startup Name & Punchy Tagline.
-  - Elevator Pitch Summary.
-  - Industry Domain & Development Stage selector pills.
-  - The Acute Problem statement.
-  - The 10x Solution & Innovation.
-  - Business Model & Monetization pricing.
-  - Founder Name & Credibility credentials.
-- **Pitching Tips Banner**: Actionable guidance for high-ranking startup submissions.
-- **Instant Community Publishing**: Submitting automatically generates a unique venture profile, saves it to AsyncStorage, registers author vote, and prompts navigation to the live pitch or feed.
-
-### 3. 🏆 Leaderboard (`src/app/(tabs)/leaderboard.jsx`)
-- **Metric Highlights**: Total active startups, aggregate community votes, and personal votes cast.
-- **Timeframe Selector**: Toggle between **All-Time High** and **Trending This Week**.
-- **Top 3 Podium**:
-  - **#1 Rank**: Elevated Gold pedestal with trophy badge and gold gradient.
-  - **#2 Rank**: Silver pedestal with medal badge.
-  - **#3 Rank**: Bronze pedestal with award badge.
-  - Direct tap on any pedestal navigates to the startup pitch.
-- **Runner-Up Startups (#4+)**: Ranked list with rank index, category badge, and direct upvote buttons that dynamically re-rank ventures in real time.
-
-### 4. ⚙️ Settings & Founder Profile (`src/app/settings.jsx`)
-- **Innovator Profile**: Summary card displaying votes cast, submitted ventures, and bookmarked startups.
-- **Preferences**:
-  - Haptic feedback toggle.
-  - Trending idea digests notification toggle.
-  - AMOLED True Dark Mode (`#0B0B12`) theme indicator.
-- **Demo & Data Controls**:
-  - **"Reset to Sample Data"**: One-tap restoration of 7 realistic deep-tech sample proposals with confirmation dialog (ideal for evaluators).
-- **Community Guidelines**: Built-in modal explaining what makes an investable idea on StartupIQ.
-
-### 5. 📄 Pitch Detail View (`src/app/idea/[id].jsx`)
-- Back button, category & stage badges, bookmarking, and native **Share** sheet.
-- Founder credentials and verification badge.
-- Verified traction & milestone callout.
-- Modular pitch breakdown cards:
-  - Executive Overview
-  - The Acute Market Friction (Problem)
-  - The 10x Innovation (Solution)
-  - Business Model, Monetization & Target Audience
-  - Market Size (TAM & CAGR)
-- **Floating Bottom Action Bar**: Live vote count with prominent gradient upvote button.
-- **Community Q&A & Feedback**: Founder feedback input and discussion thread with timestamps.
+> **StartupIQ** is a mobile-first startup validation and community intelligence application built with **React Native** and **Expo SDK 58**. It combines high-contrast **Neo-Brutalist** aesthetics with a **100% offline, content-aware heuristic AI Pitch Evaluator**, interactive milestone roadmap tracking, investor feedback loops, and robust local persistence.
 
 ---
 
-## 🎨 Design System
+## 📥 Standalone Android APK Download
 
-- **Background**: `#0B0B12` (OLED True Dark)
-- **Secondary Surface**: `#11101D`
-- **Elevated Card Surface**: `#151426` / `#1D1B33`
-- **Borders**: `rgba(255, 255, 255, 0.08)` (Subtle) & `rgba(139, 92, 246, 0.35)` (Accent)
-- **Gradients**:
-  - Primary: `['#8B5CF6', '#3B82F6']` (Electric Purple to Blue)
-  - Gold: `['#F59E0B', '#D97706']`
-  - Silver: `['#CBD5E1', '#64748B']`
-  - Bronze: `['#F97316', '#B45309']`
-- **Typography**: Clean scale with Roboto on Android and San Francisco on iOS.
-- **Touch Targets**: Minimum 48dp on all interactive elements.
+Install and run StartupIQ on any Android device without Expo Go or a computer:
+
+👉 [**Download StartupIQ v1.0.0 Standalone APK (.apk)**](https://expo.dev/artifacts/eas/vEdr-o8c38p6ePq2a16_-VCgQRMdAr0yWhUGcDr-qGs.apk)
+
+- **File Name**: `StartupIQ-v1.0.0.apk`
+- **File Size**: ~94.6 MB
+- **Package ID**: `com.startupiq.app`
+- **Target OS**: Android 8.0+ (API level 26 to 35+)
+- **Build Mode**: Standalone Internal Release (`preview` profile via EAS Build)
 
 ---
 
-## 🏗️ Architecture & Folder Structure
+## 📸 Screenshots & UI Showcase
+
+| 🔍 Explore & Filter | 🤖 AI Pitch Evaluator | 🚀 Milestone Tracker |
+| :---: | :---: | :---: |
+| *(Explore feed with multi-category pills & live upvotes)* | *(Neo-Brutalist meter, TAM, Defensibility, & Clarity)* | *(Interactive 5-stage venture roadmap)* |
+| `[Screenshot: Explore Screen]` | `[Screenshot: AI Pitch Evaluator]` | `[Screenshot: Milestone Tracker]` |
+
+| 💡 Pitch Submission | 🏆 Dynamic Leaderboard | 💬 Founder Q&A Discussion |
+| :---: | :---: | :---: |
+| *(Interactive domain selector & pitch tips)* | *(Podium top 3 with real-time rankings)* | *(Role-tagged comments: Angel, Dev, Founder)* |
+| `[Screenshot: Submit Screen]` | `[Screenshot: Leaderboard Screen]` | `[Screenshot: Discussion Screen]` |
+
+---
+
+## ✨ Key Features
+
+### 1. 🤖 Offline Content-Aware AI Pitch Evaluator
+- **Zero API Keys & Zero External Dependencies**: Powered by an on-device heuristic natural language analysis engine. Operates instantly with no OpenAI, Claude, or Gemini dependencies.
+- **Three Independent Scoring Dimensions (0–100)**:
+  - **Market Size & TAM**: Audience reach, industry expansion vectors, scalability factors, and monetization feasibility.
+  - **Defensibility & Moat**: Proprietary tech indicators, switching costs, network effects, and architectural barriers (does not give free points just for buzzwords like "AI").
+  - **Pitch & Value Clarity**: Problem sharpness, solution specificity, target audience definition, and narrative structure.
+- **Neo-Brutalist Score Meter**: High-impact visual score card with letter grades (`S`, `A`, `B`, `C`, `Needs Work`) and color-coded status badges.
+- **Dynamic Contextual Feedback**:
+  - 3 Key Strengths extracted directly from the proposal content.
+  - 3 Specific Risk Factors to watch.
+  - An objective 2–3 sentence **Angel Investor Takeaway**.
+
+### 2. 🔍 Evidence Completeness & Calibration Layer
+- Distinguishes between **unverified user claims** (e.g. self-reported revenue, customer count) and **demonstrated structural evidence**.
+- Computes an **Evidence Completeness** indicator across 6 foundational pillars:
+  1. Clear Problem Definition
+  2. Quantifiable Target Audience
+  3. Specific Solution Architecture
+  4. Explicit Revenue & Business Model
+  5. Competitive Differentiation
+  6. Measurable Traction / Metric Evidence
+- Calibrated to prevent score saturation; vague or keyword-stuffed pitches are penalized appropriately.
+
+### 3. 🚀 Milestone Roadmap Tracker
+- Interactive progress tracker mapping the startup's lifecycle:
+  - `Idea` ➔ `Prototype` ➔ `MVP` ➔ `First 100 Users` ➔ `Seed Funding`
+- Visual progress bar with animated active stage indicators.
+- Interactive stage selector allowing founders and evaluators to update and track development velocity.
+
+### 4. 💬 Interactive Founder Q&A & Investor Feedback
+- Discussion thread allowing the community to critique and support startup ideas.
+- **Role Tags**: Commenters can tag their perspective as **Angel Investor**, **Dev**, or **Community Member**.
+- **Verified Founder Badge**: Responses from the pitch creator carry a highlighted badge for authentic dialogue.
+
+### 5. 🔍 Startup Discovery & Live Upvoting
+- **Live Search**: Instant keyword search across startup names, taglines, and descriptions.
+- **Domain Filter Chips**: `All`, `AI & ML`, `DevTools`, `FinTech`, `ClimateTech`, `HealthTech`, `Cybersecurity`, `SaaS`, and `E-Commerce`.
+- **Sort Selectors**: Switch between **Trending** (algorithmic momentum), **Top Voted**, and **Newest**.
+- **Tactile Upvoting**: Interactive upvote button with haptic feedback and real-time state synchronization.
+
+### 6. 🏆 Top 3 Podium Leaderboard
+- Real-time community leaderboard ranking top startups.
+- **Top 3 Visual Podium**: Gold (`#1`), Silver (`#2`), and Bronze (`#3`) pedestals with direct tap navigation.
+- Real-time re-ranking as upvotes are cast across the application.
+
+### 7. 💾 Robust Local Persistence (Offline-First)
+- Backed by React Native AsyncStorage on SQLite.
+- Built-in **sequential write queue** preventing asynchronous race conditions and promise rejections.
+- In-memory fallback ensuring zero app crashes even if device storage becomes temporarily restricted.
+- "Reset to Sample Data" option in Settings for evaluation and demonstration.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technology | Details |
+| :--- | :--- | :--- |
+| **Framework** | [React Native](https://reactnative.dev/) `0.88.1` | Native cross-platform mobile runtime |
+| **Tooling** | [Expo SDK](https://expo.dev/) `58.0.23` | Modern Expo development platform |
+| **Routing** | [Expo Router](https://docs.expo.dev/router/introduction/) `58.0.30` | File-based navigation with native stack and tabs |
+| **Local Storage** | [`@react-native-async-storage/async-storage`](https://github.com/react-native-async-storage/async-storage) `2.2.0` | Native on-device key-value store |
+| **Icons** | [`lucide-react-native`](https://lucide.dev/) `1.68.0` | Crisp modern vector iconography |
+| **Haptics** | [`expo-haptics`](https://docs.expo.dev/versions/latest/sdk/haptics/) `58.0.7` | Native tactile vibration feedback on interaction |
+| **Visual Effects** | [`expo-linear-gradient`](https://docs.expo.dev/versions/latest/sdk/linear-gradient/) `58.0.3` | Multi-stop high-contrast gradients |
+| **Build Engine** | [EAS Build](https://docs.expo.dev/build/introduction/) `27.4.1` | Cloud build infrastructure for standalone `.apk` output |
+
+---
+
+## 🧠 AI Pitch Evaluator Architecture
+
+```
+                       ┌──────────────────────────────┐
+                       │   Startup Proposal Input     │
+                       │  (Name, Tagline, Description)│
+                       └──────────────┬───────────────┘
+                                      │
+                                      ▼
+                       ┌──────────────────────────────┐
+                       │   Content Extractor Engine   │
+                       │  (Taxonomy, Lexicon, Regex)  │
+                       └──────────────┬───────────────┘
+                                      │
+            ┌─────────────────────────┼─────────────────────────┐
+            │                         │                         │
+            ▼                         ▼                         ▼
+  ┌───────────────────┐     ┌───────────────────┐     ┌───────────────────┐
+  │  TAM & Market     │     │ Defensibility     │     │ Pitch Clarity     │
+  │  Scoring Engine   │     │ & Moat Engine     │     │ Scoring Engine    │
+  │     (0 - 100)     │     │     (0 - 100)     │     │     (0 - 100)     │
+  └─────────┬─────────┘     └─────────┬─────────┘     └─────────┬─────────┘
+            │                         │                         │
+            └─────────────────────────┼─────────────────────────┘
+                                      │
+                                      ▼
+                       ┌──────────────────────────────┐
+                       │ Evidence Confidence Engine   │
+                       │ (6-Pillar Structural Proof)  │
+                       └──────────────┬───────────────┘
+                                      │
+                                      ▼
+                       ┌──────────────────────────────┐
+                       │ Dynamic Feedback Generator   │
+                       │ (Strengths, Risks, Takeaway) │
+                       └──────────────┬───────────────┘
+                                      │
+                                      ▼
+                       ┌──────────────────────────────┐
+                       │   Neo-Brutalist Meter UI     │
+                       │ (StartupIQ Score & Letter)   │
+                       └──────────────────────────────┘
+```
+
+### Module Breakdown
+- [`src/utils/evaluator/domainTaxonomy.js`](src/utils/evaluator/domainTaxonomy.js): Domain classification across 12 tech verticals with domain-specific keyword dictionaries.
+- [`src/utils/evaluator/contentExtractor.js`](src/utils/evaluator/contentExtractor.js): Extracts problem statements, solutions, target audiences, technology stacks, business models, and scalability signals.
+- [`src/utils/evaluator/scoringEngines.js`](src/utils/evaluator/scoringEngines.js): Three independent scoring engines that calculate mathematically isolated metrics.
+- [`src/utils/evaluator/confidenceEngine.js`](src/utils/evaluator/confidenceEngine.js): Evaluates structural completeness without confusing it with startup quality.
+- [`src/utils/evaluator/feedbackGenerator.js`](src/utils/evaluator/feedbackGenerator.js): Generates tailored strengths, risk factors, and investor perspectives based strictly on detected content.
+
+---
+
+## 📁 Project Structure
 
 ```
 StartupIQ/
+├── assets/                          # Application icons, splash screens, and adaptive assets
+├── builds/                          # Local directory for generated standalone APKs
+│   └── StartupIQ-v1.0.0.apk         # Compiled standalone Android APK
 ├── src/
-│   ├── app/                    # Expo Router file-based routes
-│   │   ├── _layout.jsx         # Root layout with SafeAreaProvider & IdeasProvider
-│   │   ├── (tabs)/
-│   │   │   ├── _layout.jsx     # Floating bottom navigation bar
-│   │   │   ├── index.jsx       # Explore screen
-│   │   │   ├── submit.jsx      # Submit idea screen
-│   │   │   └── leaderboard.jsx # Leaderboard screen
+│   ├── app/                         # Expo Router file-based route hierarchy
+│   │   ├── _layout.jsx              # Global root layout & IdeasProvider
+│   │   ├── (tabs)/                  # Bottom tab navigator
+│   │   │   ├── _layout.jsx          # Tab navigation styling & icon bar
+│   │   │   ├── index.jsx            # Explore & Search feed
+│   │   │   ├── submit.jsx           # Startup Pitch Submission screen
+│   │   │   └── leaderboard.jsx      # Top 3 Podium & Leaderboard screen
 │   │   ├── idea/
-│   │   │   └── [id].jsx        # Deep dive pitch view
-│   │   └── settings.jsx        # Settings & Profile screen
+│   │   │   └── [id].jsx             # Comprehensive Pitch Deck & Evaluation view
+│   │   └── settings.jsx             # Preferences, Profile & Data controls
 │   ├── components/
-│   │   ├── common/
-│   │   │   ├── Badge.jsx          # Category and stage pill badges
-│   │   │   ├── EmptyState.jsx     # Zero-state placeholder
-│   │   │   ├── GlassCard.jsx      # Rounded glass card with subtle borders
-│   │   │   ├── GradientButton.jsx # Gradient action button
-│   │   │   ├── Header.jsx         # Top brand bar with settings icon
-│   │   │   └── StatPill.jsx       # Metric counter pill
-│   │   ├── explore/
-│   │   │   ├── CategoryFilter.jsx # Horizontal category scroll chips
-│   │   │   ├── IdeaCard.jsx       # Venture card with live upvoting
-│   │   │   ├── SearchBar.jsx      # Search input with clear button
-│   │   │   └── SortSelector.jsx   # Trending / Top / Newest toggle
-│   │   ├── leaderboard/
-│   │   │   ├── LeaderboardRow.jsx # Ranked startup row item
-│   │   │   └── Podium.jsx         # Top 3 Gold/Silver/Bronze pedestals
-│   │   └── submit/
-│   │       ├── CategoryPicker.jsx # Grid selector for category & stage
-│   │       └── FormField.jsx      # Custom input with counter and validation
+│   │   ├── common/                  # Reusable UI primitives (Badges, Buttons, Cards)
+│   │   ├── explore/                 # Explore components (Filters, Search, Cards)
+│   │   ├── leaderboard/             # Podium & leaderboard rows
+│   │   ├── pitch/                   # Pitch detail, AI Evaluator & Milestone Tracker
+│   │   │   ├── AiPitchEvaluator.jsx # Neo-Brutalist AI evaluation widget
+│   │   │   └── MilestoneTracker.jsx # 5-stage interactive roadmap
+│   │   └── submit/                  # Submission form fields & category pickers
 │   ├── context/
-│   │   └── IdeasContext.jsx       # Global state management & AsyncStorage sync
+│   │   └── IdeasContext.jsx         # Global state & AsyncStorage sequential queue
 │   ├── data/
-│   │   └── initialIdeas.js        # Realistic startup ideas
+│   │   └── initialIdeas.js          # Default seed startup proposals
 │   ├── hooks/
-│   │   └── useIdeas.js            # Consumer hook for IdeasContext
-│   └── theme/
-│       ├── colors.js              # Color tokens & gradients
-│       ├── spacing.js             # 8dp spacing grid
-│       └── typography.js          # Font scale & weights
-├── app.json
-├── babel.config.js
-└── package.json
+│   │   └── useIdeas.js              # State consumption hook
+│   ├── theme/                       # Color tokens, Neo-Brutalist borders, typography
+│   └── utils/
+│       ├── aiPitchEvaluator.js      # Public evaluator interface
+│       └── evaluator/               # Evaluator engine modules
+│           ├── domainTaxonomy.js    # Industry taxonomies
+│           ├── contentExtractor.js  # Heuristic entity extractor
+│           ├── scoringEngines.js    # 3 independent scoring calculators
+│           ├── confidenceEngine.js  # Evidence completeness layer
+│           ├── feedbackGenerator.js # Dynamic feedback synthesizer
+│           └── __tests__/           # Automated test suites
+│               ├── validationAuditTest.mjs
+│               ├── storageReliabilityTest.mjs
+│               └── preReleaseAuditTest.mjs
+├── app.json                         # Expo configuration (EAS project ID, Android package)
+├── eas.json                         # EAS Build profiles (preview -> standalone APK)
+├── babel.config.js                  # Babel presets for Expo
+├── package.json                     # Dependency manifests & test scripts
+└── README.md                        # Documentation
 ```
 
 ---
 
-## 🚀 Running the Application
+## 🧪 Automated Testing & Verification
 
-### 1. Start Metro Dev Server
+The project includes three comprehensive automated verification suites covering scoring calibration, storage reliability, and pre-release audits:
+
+```bash
+npm test
+```
+
+### Test Suites Included:
+1. **Validation Audit** (`validationAuditTest.mjs`):
+   - Verifies distinct evaluation across same-industry ideas (Healthcare: Appointment platform vs. AI diagnostics vs. Medicine delivery).
+   - Validates that description quality and detail directly influence clarity and completeness.
+   - Tests unverified user claims handling.
+2. **Storage Reliability** (`storageReliabilityTest.mjs`):
+   - Tests AsyncStorage write queue under rapid concurrent operations.
+   - Verifies data integrity across simulated application restarts.
+   - Tests graceful degradation and in-memory fallback.
+3. **Pre-Release Audit** (`preReleaseAuditTest.mjs`):
+   - Validates dependency compatibility with Expo SDK 58.
+   - Checks production JavaScript bundling without warnings.
+   - Verifies Android package identifier (`com.startupiq.app`) and native config.
+
+---
+
+## 🚀 Getting Started (Development Setup)
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- `npm` or `bun`
+- [Expo Go app](https://expo.dev/go) (optional, if testing on physical phone during development)
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/vjshriram157/startupIQ.git
+cd startupIQ
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Start Development Server
 ```bash
 npx expo start
 ```
 
-### 2. Run on Android
-Press `a` in the terminal or run:
+- Press `a` in the terminal to run on an Android emulator.
+- Press `w` to open in a web browser.
+- Scan the displayed QR code with the Expo Go app on your mobile device.
+
+---
+
+## 📦 Building a Standalone Android APK with EAS
+
+To generate your own standalone `.apk` using Expo Application Services (EAS Build):
+
+### 1. Install EAS CLI & Authenticate
 ```bash
-npx expo start --android
+npm install -g eas-cli
+eas login
 ```
 
-### 3. Test on Physical Device
-Download **Expo Go** from Google Play Store or App Store and scan the QR code displayed in the terminal.
+### 2. Configure EAS Build Profile
+`eas.json` is pre-configured with the `preview` profile:
+```json
+{
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  }
+}
+```
 
+### 3. Trigger the Build
+```bash
+npx eas-cli build -p android --profile preview
+```
+
+The cloud builder will compile native Android binaries and output a downloadable `.apk` file.
+
+---
+
+## 📱 Sideloading the APK on Android
+
+1. Download [`StartupIQ-v1.0.0.apk`](https://expo.dev/artifacts/eas/vEdr-o8c38p6ePq2a16_-VCgQRMdAr0yWhUGcDr-qGs.apk) directly to your Android device.
+2. Open the downloaded file from your Notifications or **Files / Downloads** app.
+3. When prompted, tap **Settings** and enable **"Allow from this source"**.
+4. Tap **Install** (if Google Play Protect prompts with unknown developer, tap **"Install anyway"**).
+5. Open StartupIQ and start validating ideas immediately!
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
