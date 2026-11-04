@@ -5,9 +5,25 @@
 [![Expo Router](https://img.shields.io/badge/Expo_Router-v58-blueviolet?style=for-the-badge&logo=expo&logoColor=white)](https://docs.expo.dev/router/introduction/)
 [![Offline AI](https://img.shields.io/badge/AI_Evaluator-100%25_Offline-00F0FF?style=for-the-badge&logo=probot&logoColor=black)](https://github.com/vjshriram157/startupIQ)
 [![Android APK](https://img.shields.io/badge/Android_APK-v1.0.0_Ready-FFE600?style=for-the-badge&logo=android&logoColor=black)](https://expo.dev/artifacts/eas/vEdr-o8c38p6ePq2a16_-VCgQRMdAr0yWhUGcDr-qGs.apk)
+[![YouTube Demo](https://img.shields.io/badge/YouTube-Video_Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/shorts/vKB9qd9yAqE?si=bpK29_-x_sc3ZRE_)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
 > **StartupIQ** is a mobile-first startup validation and community intelligence application built with **React Native** and **Expo SDK 58**. It combines high-contrast **Neo-Brutalist** aesthetics with a **100% offline, content-aware heuristic AI Pitch Evaluator**, interactive milestone roadmap tracking, investor feedback loops, and robust local persistence.
+
+---
+
+## 🎥 Application Walkthrough & Video Demo
+
+Watch the complete live walkthrough demonstrating the Neo-Brutalist interface, AI Pitch Evaluator, Milestone Tracker, and live upvoting:
+
+<div align="center">
+  <a href="https://youtube.com/shorts/vKB9qd9yAqE?si=bpK29_-x_sc3ZRE_">
+    <img src="https://img.youtube.com/vi/vKB9qd9yAqE/hqdefault.jpg" width="480" alt="StartupIQ Live Video Walkthrough" style="border-radius: 12px; border: 3px solid #000;" />
+  </a>
+  <p>
+    ▶️ <a href="https://youtube.com/shorts/vKB9qd9yAqE?si=bpK29_-x_sc3ZRE_"><strong>Click here to watch the full walkthrough on YouTube</strong></a>
+  </p>
+</div>
 
 ---
 
